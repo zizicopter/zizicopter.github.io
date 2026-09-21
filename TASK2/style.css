@@ -8,3 +8,9 @@ nav {
  clear: both;
 }
 
+#header {
+ style="width:100%; 
+ background-color:#ccc; 
+ padding: 10px; 
+ height:120px;"
+}
