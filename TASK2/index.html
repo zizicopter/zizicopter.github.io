@@ -3,10 +3,12 @@
   </head>
 
   <body>
-	<img id="logo" src="logo.jpg" alt="Наш лого" />
-	<h1>Название сайта справа обтекает логотип</h1>
-	<nav> ...навигация под логотипом </nav>
-
+	<div style="width:100%; background-color:#ccc; padding: 10px; height:120px;">
+      <!-- картинка обтекает текст слева -->
+      <img style="float:left; margin:10px; width:100px; height:100px;" src="logo.jpg" alt="Описание картинки для скрин-ридеров и поисковиков" />
+      <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
+      <div style="background-color:#ddd; padding:10px;">Текст</div>
+    </div>
     <h1>Задание 1</h1>
 	<a href="#1">текст ссылки</a>
 
