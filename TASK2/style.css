@@ -10,8 +10,16 @@ nav {
 }
 
 #header {
- style="width:100%; 
+ width:100%; 
  background-color:#ccc; 
  padding: 10px; 
- height:120px;"
+ height:120px;
+}
+
+#background {
+ max-width:800px; 
+ background-color:#ccc;
+ margin: 0 auto; 
+ margin-top:20px;
+ padding:10px;
 }
