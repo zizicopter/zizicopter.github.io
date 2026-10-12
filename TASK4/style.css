@@ -1,0 +1,29 @@
+.site-header,
+.site-nav,
+.site-section-header,
+.site-footer {
+  background-color: #6b9bd2;
+}
+.logo-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-nav .nav-item {
+    border-bottom: none !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .site-nav .nav-item:last-child {
+    border-right: none;
+  }
+}
