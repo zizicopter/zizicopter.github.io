@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Задание 3</title>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logo" src="logo.jpg" alt="Логотип">
+    <div class="site-title">Название сайта</div>
+  </header>
+
+  <nav class="nav">
+    <ul class="menu">
+      <li><a href="#">Ссылка меню 1</a></li>
+      <li><a href="#">Ссылка 2</a></li>
+      <li><a href="#">Ссылка 3</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+
+    <!-- Список ссылок идёт ПЕРВЫМ в HTML -->
+    <section class="links">
+      <h2>Список гиперссылок</h2>
+      <ul>
+        <li><a href="http://kubsu.ru/">КубГУ (http)</a></li>
+        <li><a href="https://kubsu.ru/">КубГУ (https)</a></li>
+        <li><a href="/kubsu.ru/">КубГУ (от корня)</a></li>
+        <li><a href="./kubsu.ru">КубГУ (относительная)</a></li>
+        <li><a href="/zxc1.html">Внутренняя страница</a></li>
+        <li><a href="https://yandex.ru/search/?text=asdfasd&lr=35">Ссылка с параметрами</a></li>
+        <li><a href="https://html5book.ru/css-css3/#vid_vpaut_div">Фрагмент страницы</a></li>
+        <li><a href="page.html?id=5">Товар 5</a></li>
+        <li><a href="hello.html">Страница в текущем каталоге</a></li>
+        <li><a href="about/hello.html">Страница в каталоге about</a></li>
+        <li><a href="lvl1/hello.html">Страница уровнем выше</a></li>
+        <li><a href="lvl1/lvl2/hello.html">Страница двумя уровнями выше</a></li>
+        <li>
+          <p>Подробнее о нашем университете можно узнать на
+            <a href="https://kubsu.ru/">официальном сайте КубГУ</a>,
+            где собрана вся актуальная информация.
+          </p>
+        </li>
+        <li><a href="">Пустая ссылка</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка nofollow</a></li>
+        <li><a href="https://kubsu.ru/" rel="noindex">Ссылка noindex</a></li>
+        <li>
+          <ol>
+            <li><a href="https://kubsu.ru/" title="Официальный сайт университета">КубГУ</a></li>
+            <li><a href="https://html5book.ru/" title="Учебник по HTML и CSS">HTML5Book</a></li>
+            <li><a href="https://validator.w3.org/" title="Валидатор HTML-разметки">W3C Validator</a></li>
+          </ol>
+        </li>
+        <li><a href="ftp://user:password@ftp.example.com/file.zip">Скачать файл с FTP</a></li>
+      </ul>
+    </section>
+
+    <!-- Таблица идёт ВТОРОЙ в HTML, но на смартфоне показывается ВЫШЕ через order -->
+    <section class="table-section">
+      <h2>Таблица</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Заголовок 1</th>
+            <th>Заголовок 2</th>
+            <th>Заголовок 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ячейка 1</td><td>Ячейка 2</td><td>Ячейка 3</td></tr>
+          <tr><td>Ячейка 4</td><td>Ячейка 5</td><td>Ячейка 6</td></tr>
+          <tr><td>Ячейка 7</td><td>Ячейка 8</td><td>Ячейка 9</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="form-section">
+      <h2>Форма</h2>
+      <form action="/" method="POST">
+
+        <label>
+          ФИО:<br>
+          <input name="field-name-1" placeholder="Введите ваше ФИО">
+        </label><br>
+
+        <label>
+          Телефон:<br>
+          <input name="field-phone" type="tel" placeholder="Введите ваш телефон">
+        </label><br>
+
+        <label>
+          Email:<br>
+          <input name="field-email" type="email" placeholder="Введите вашу почту">
+        </label><br>
+
+        <label>
+          Дата рождения:<br>
+          <input name="field-date" value="2019-08-13" type="date">
+        </label><br>
+
+        Ваш пол:<br>
+        <label><input type="radio" checked name="radio-group-1" value="Значение1"> Мужской</label>
+        <label><input type="radio" name="radio-group-1" value="Значение2"> Женский</label><br>
+
+        <label>
+          Любимый язык:<br>
+          <select name="field-name-4[]" multiple>
+            <option value="Значение1">Pascal</option>
+            <option value="Значение2" selected>C</option>
+            <option value="Значение3" selected>C++</option>
+            <option value="Значение4" selected>JavaScript</option>
+            <option value="Значение5">PHP</option>
+            <option value="Значение6" selected>Python</option>
+            <option value="Значение7" selected>Java</option>
+            <option value="Значение8" selected>Prolog</option>
+          </select>
+        </label><br>
+
+        <label>
+          Биография:<br>
+          <textarea name="field-name-2"></textarea>
+        </label><br>
+
+        Чекбокс:<br>
+        <label><input type="checkbox" checked name="check-1"> с контрактом ознакомлен (а)</label><br>
+
+        <input type="submit" value="Сохранить">
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    (с) Ярослав Казанков
+  </footer>
+
+</body>
+</html>
