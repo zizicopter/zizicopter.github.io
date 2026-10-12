@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор стоимости заказа</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Калькулятор стоимости заказа</h1>
+  </header>
+
+  <main class="content">
+    <form id="order-form" class="order-form" novalidate>
+
+      <div class="field">
+        <label for="product">Выберите товар:</label>
+        <select id="product" name="product">
+          <option value="150">Товар A — 150 руб.</option>
+          <option value="320">Товар B — 320 руб.</option>
+          <option value="540">Товар C — 540 руб.</option>
+          <option value="780">Товар D — 780 руб.</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="quantity">Количество товара:</label>
+        <input id="quantity" name="quantity" type="text"
+               inputmode="numeric" placeholder="Введите количество" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <button type="button" id="calc-btn" class="btn">Подсчитать стоимость</button>
+      </div>
+
+      <p id="error-message" class="error-message" role="alert" hidden></p>
+
+      <p id="result" class="result" role="status"></p>
+
+    </form>
+  </main>
+
+  <footer class="footer">
+    (с) Сергей Синица
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
